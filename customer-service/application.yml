@@ -1,0 +1,7 @@
+server:
+  port: 9000
+
+spring:
+  profiles:
+#    active: eureka # 激活eureka配置文件
+    active: consul # 激活consul配置文件，多个使用 "逗号" 分割

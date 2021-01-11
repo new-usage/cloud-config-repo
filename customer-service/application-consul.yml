@@ -1,0 +1,12 @@
+# eureka 注册中心配置
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name} #指定注册的服务名称 默认就是应用名
+        register-health-check: true #开启consul服务的健康检查 默认true
+        health-check-path: ${server.servlet.context-path}/actuator/health #如果不加contenxt-path 默认健康检查路径http://${ip}:${port}/actuator/health
+        health-check-interval: 10s # 健康检查间隔时间
+        health-check-timeout: 5s #健康检查超市时间
