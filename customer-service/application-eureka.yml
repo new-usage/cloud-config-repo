@@ -1,7 +1,0 @@
-# eureka 注册中心配置
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://es-a:8762/eureka,http://es-b:8763/eureka,http://es-c:8764/eureka
